@@ -181,7 +181,7 @@ int game()
         // Process getting fruit
         if (board[head_pos.y][head_pos.x] == TILE_FRUIT)
         {
-            board[head_pos.y][head_pos.x] = length++;
+            board[head_pos.y][head_pos.x] = length++ + 1;
             new_fruit();
         }
         else
